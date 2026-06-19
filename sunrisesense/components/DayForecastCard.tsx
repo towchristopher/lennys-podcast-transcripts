@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { DayForecast } from '../types';
+import { DayForecast, Quality } from '../types';
 import { Colors, Typography, Spacing, Radius } from '../constants/theme';
 import { QualityBadge } from './QualityBadge';
 
@@ -54,7 +54,7 @@ function EventRow({
 }: {
   label: string;
   time: string;
-  quality: import('../types').Quality;
+  quality: Quality;
   color: string;
 }) {
   return (
